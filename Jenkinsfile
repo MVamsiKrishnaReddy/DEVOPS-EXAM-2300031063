@@ -64,7 +64,7 @@ pipeline {
       steps {
         sh '''
           set -e
-          TARGET="${TOMCAT_HOME}/webapps/reacthospitalapi"
+          TARGET="${TOMCAT_HOME}/webapps/2300031063-frontend"
           rm -rf "$TARGET"
           mkdir -p "$TARGET"
           cp -R frontend-reactapp/dist/* "$TARGET/"
